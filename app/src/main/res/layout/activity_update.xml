@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginBottom="10dp"
+        android:id="@+id/inputLayoutFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingsNameUpdate"
+            android:hint="Enter Settings name"
+            android:textColorHint="@color/green"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="100dp"
+
+            />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginBottom="10dp"
+        android:id="@+id/InputDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:errorEnabled="true">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/distanceUpdate"
+            android:hint="Profile Activation Distance"
+            android:textColorHint="@color/green"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="100dp"
+            android:inputType="number"
+
+
+            />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_viewUpdate"
+        android:textSize="30sp"
+        android:text="get_placeUpdate"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/longitudeUpdate"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:text="get_placeUpdate"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <!--    <Spinner-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/sp_option"-->
+    <!--        android:padding="20dp"/>-->
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/sp_resultUpdate"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Media Volume"/>
+
+        <SeekBar
+            android:padding="4dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="MediaVolume"
+            android:id="@+id/mediavolumeUpdate"
+            android:max="15"
+            android:min="0"
+            android:layout_marginLeft="20dp"/>
+
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call Volume"/>
+
+        <SeekBar
+            android:padding="4dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="CallVolume"
+            android:id="@+id/CallVolumeUpdate"
+            android:max="15"
+            android:min="0"
+            android:layout_marginLeft="20dp"/>
+
+
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alarm Volume"/>
+
+        <SeekBar
+            android:padding="4dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="CallVolume"
+            android:id="@+id/AlarmVolumeUpdate"
+            android:max="15"
+            android:min="0"
+            android:layout_marginLeft="20dp"/>
+
+
+
+        <CheckBox
+            android:id="@+id/vibarateUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="58sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Vibrate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/longitude" />
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/update"
+        android:text="update"
+        />
+
+
+
+
+
+
+</LinearLayout>
